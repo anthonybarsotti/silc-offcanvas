@@ -1,15 +1,18 @@
 @import "variables";
 
 .silk-offcanvas {
-	position: $silk-offcanvas-position;
-	width: $silk-offcanvas-width;
-	height: $silk-offcanvas-height;
-	right: $silk-offcanvas-right;
-	top: $silk-offcanvas-top;
-	transform: $silk-offcanvas-transform;
-	opacity: $silk-offcanvas-opacity;
-	background: $silk-offcanvas-background;
-	transition: $silk-offcanvas-transition;
+
+	.js & {
+		position: $silk-offcanvas-position;
+		width: $silk-offcanvas-width;
+		height: $silk-offcanvas-height;
+		right: $silk-offcanvas-right;
+		top: $silk-offcanvas-top;
+		transform: $silk-offcanvas-transform;
+		opacity: $silk-offcanvas-opacity;
+		background: $silk-offcanvas-background;
+		transition: $silk-offcanvas-transition;
+	}
 }
 
 .silk-offcanvas--left {
@@ -25,23 +28,39 @@
 }
 
 .silk-offcanvas--visible {
-	opacity: $silk-offcanvas--visible-opacity;
-	transform: $silk-offcanvas--visible-transform;
+
+	.js & {
+		opacity: $silk-offcanvas--visible-opacity;
+		transform: $silk-offcanvas--visible-transform;
+	}
+}
+
+.silk-offcanvas__trigger {
+	display: none;
+
+	.js & {
+		display: block;
+	}
 }
 
 @media (min-width:$silk-offcanvas__trigger--hidden) {
 
 	.silk-offcanvas__trigger {
-		display: none;
-	}
 
+		.js & {
+			display: none;
+		}
+	}
 }
 
 @media (min-width:$silk-offcanvas--visible) {
 
 	.silk-offcanvas {
-		position: $silk-offcanvas--visible-position;
-		opacity: $silk-offcanvas--visible-opacity;
-		transform: $silk-offcanvas--visible-transform;
+
+		.js & {
+			position: $silk-offcanvas--visible-position;
+			opacity: $silk-offcanvas--visible-opacity;
+			transform: $silk-offcanvas--visible-transform;
+		}
 	}
 }
