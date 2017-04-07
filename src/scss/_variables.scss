@@ -1,1 +1,23 @@
 $silk-offcanvas--visible: 800px !default;
+$silk-offcanvas__trigger--hidden: 800px !default; 
+
+$silk-offcanvas-position: fixed !default;
+$silk-offcanvas-top: 0 !default;
+$silk-offcanvas-right: 0 !default;
+$silk-offcanvas-width: 100% !default;
+$silk-offcanvas-height: 100% !default;
+$silk-offcanvas-background: none !default;
+$silk-offcanvas-transition: transform .25s ease-in-out !default;
+$silk-offcanvas-transform: translate3d(100%, 0, 0) !default;
+$silk-offcanvas-opacity: 0 !default;
+
+$silk-offcanvas--left-transform: translate3d(-100%, 0, 0) !default;
+$silk-offcanvas--top-transform: translate3d(0, -100%, 0) !default;
+$silk-offcanvas--bottom-transform: translate3d(0, 100%, 0) !default;
+
+$silk-offcanvas--visible-opacity: 1 !default;
+$silk-offcanvas--visible-transform: translate3d(0, 0, 0) !default;
+
+$silk-offcanvas--visible-position: static !default;
+$silk-offcanvas--visible-opacity: 1 !default;
+$silk-offcanvas--visible-transform: none !default;
