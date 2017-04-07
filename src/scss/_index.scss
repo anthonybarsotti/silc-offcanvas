@@ -6,7 +6,11 @@
 	right: 0;
 	top: 0;
 	transform: translateX(-100%);
-	background: #f0c;
+	transition: transform .15s ease-in-out;
+
+	&--visible {
+		transform: translateX(0);
+	}
 }
 
 @media (min-width:$silk-offcanvas--visible) {
