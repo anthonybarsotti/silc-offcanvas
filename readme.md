@@ -30,3 +30,6 @@ Bottom: `silk-offcanvas--bottom`
 
 ### Responsive
 You can control when an element becomes offcanvas using the `$silk-offcanvas--visible` and `$silk-offcanvas__trigger--hidden` variables by overriding them. The default value is `800px`.
+
+## Styling
+As with all Silk components, no deliberate style has been added. However, through a SASS fallback system, a number of [SASS variables](src/scss/_variables.scss) are available to easily apply design without having to write your own selectors.
