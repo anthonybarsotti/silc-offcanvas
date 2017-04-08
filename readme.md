@@ -18,3 +18,15 @@ The content element should contain an anchor link that is self-referencing throu
     <p>This content is outside of the viewport.</p>
 </div>
 ```
+
+## Options
+
+### Direction
+An offcanvas element appears from the right by default, but can be modified using one of the following classes:
+
+Left: `silk-offcanvas--left`
+Top: `silk-offcanvas--top`
+Bottom: `silk-offcanvas--bottom`
+
+### Responsive
+You can control when an element becomes offcanvas using the `$silk-offcanvas--visible` and `$silk-offcanvas__trigger--hidden` variables by overriding them. The default value is `800px`.
