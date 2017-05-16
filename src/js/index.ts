@@ -1,8 +1,8 @@
 export class SilkOffcanvas
 {
-    element: HTMLElement;
+    protected element: HTMLElement;
 
-    constructor(element: HTMLElement)
+    public constructor(element: HTMLElement)
     {
 		// Save shortcut to element
         this.element = element;
@@ -12,7 +12,7 @@ export class SilkOffcanvas
 		});
     }
 
-	toggle(event) {
+	protected toggle(event) {
 
 		event.preventDefault();
 
