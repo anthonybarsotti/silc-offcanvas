@@ -10,14 +10,26 @@
   },
   "license": "ISC",
   "scripts": {
-    "build": "tsc --outDir ./dist ./src/js/*.ts"
+    "test": "NODE_ENV=test webpack-dev-server",
+    "build": "tsc --outDir ./dist ./src/js/index.ts",
+    "serve": "webpack-dev-server --open",
+    "mocha": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nickrigby/silk-offcanvas"
   },
   "devDependencies": {
+    "css-loader": "^0.28.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
     "silk-core": "nickrigby/silk-core",
-    "typescript": "^2.2.2"
+    "style-loader": "^0.18.0",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.2.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
