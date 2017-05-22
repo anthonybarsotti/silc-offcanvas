@@ -1,7 +1,7 @@
 {
-  "name": "silk-offcanvas",
+  "name": "silc-offcanvas",
   "version": "0.3.0",
-  "description": "Offcanvas component for the silk framework",
+  "description": "Offcanvas component for the silc framework",
   "main": "./dist/index.js",
   "author": {
     "name": "Nick Rigby",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nickrigby/silk-offcanvas"
+    "url": "https://github.com/nickrigby/silc-offcanvas"
   },
   "devDependencies": {
     "css-loader": "^0.28.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
-    "silk-core": "nickrigby/silk-core",
+    "silc-core": "nickrigby/silc-core",
     "style-loader": "^0.18.0",
     "ts-loader": "^2.1.0",
     "typescript": "^2.2.2",

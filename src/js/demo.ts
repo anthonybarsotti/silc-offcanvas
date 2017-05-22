@@ -1,11 +1,11 @@
 import "../scss/_variables.scss";
 import "../scss/_index.scss";
 
-import { SilkCore } from "silk-core";
-import { SilkOffcanvas } from "./index.ts";
+import { SilcCore } from "silc-core";
+import { SilcOffcanvas } from "./index.ts";
 
-new SilkCore();
+new SilcCore();
 
-[].forEach.call(document.querySelectorAll('.silk-offcanvas__trigger'), (el) => {
-    new SilkOffcanvas(el);
+[].forEach.call(document.querySelectorAll('.silc-offcanvas__trigger'), (el) => {
+    new SilcOffcanvas(el);
 });

@@ -1,4 +1,4 @@
-export class SilkOffcanvas
+export class SilcOffcanvas
 {
     protected element: HTMLElement;
 
@@ -20,6 +20,6 @@ export class SilkOffcanvas
 
 		let targetEl = document.querySelector(target);
 
-		targetEl.classList.toggle('silk-offcanvas--visible');
+		targetEl.classList.toggle('silc-offcanvas--visible');
 	}
 }

@@ -1,66 +1,66 @@
 @import "variables";
 
-.silk-offcanvas {
+.silc-offcanvas {
 
 	.js & {
-		position: $silk-offcanvas-position;
-		width: $silk-offcanvas-width;
-		height: $silk-offcanvas-height;
-		right: $silk-offcanvas-right;
-		top: $silk-offcanvas-top;
-		transform: $silk-offcanvas-transform;
-		background: $silk-offcanvas-background;
-		transition: $silk-offcanvas-transition;
+		position: $silc-offcanvas-position;
+		width: $silc-offcanvas-width;
+		height: $silc-offcanvas-height;
+		right: $silc-offcanvas-right;
+		top: $silc-offcanvas-top;
+		transform: $silc-offcanvas-transform;
+		background: $silc-offcanvas-background;
+		transition: $silc-offcanvas-transition;
 		box-sizing: border-box;
 
 		&--left {
-			transform: $silk-offcanvas--left-transform;
+			transform: $silc-offcanvas--left-transform;
 		}
 
 		&--top {
-			transform: $silk-offcanvas--top-transform;
+			transform: $silc-offcanvas--top-transform;
 		}
 
 		&--bottom {
-			transform: $silk-offcanvas--bottom-transform;
+			transform: $silc-offcanvas--bottom-transform;
 		}
 
 		&--visible {
-			transform: $silk-offcanvas--visible-transform;
+			transform: $silc-offcanvas--visible-transform;
 		}
 
-		@media (min-width:$silk-offcanvas--visible) {
-			position: $silk-offcanvas--visible-position;
-			transform: $silk-offcanvas--visible-transform;
-			width: $silk-offcanvas--visible-width;
+		@media (min-width:$silc-offcanvas--visible) {
+			position: $silc-offcanvas--visible-position;
+			transform: $silc-offcanvas--visible-transform;
+			width: $silc-offcanvas--visible-width;
 		}
 	}
 }
 
-.silk-offcanvas__inner {
-	position: $silk-offcanvas--inner-position;
-	top: $silk-offcanvas--inner-top;
-	right: $silk-offcanvas--inner-right;
-	bottom: $silk-offcanvas--inner-bottom;
-	left: $silk-offcanvas--inner-left;
-	width: $silk-offcanvas--inner-width;
-	height: $silk-offcanvas--inner-height;
-	max-width: $silk-offcanvas--inner-max-width;
-	max-height: $silk-offcanvas--inner-max-height;
-	padding: $silk-offcanvas--inner-padding;
-	background: $silk-offcanvas--inner-background;
-	transform: $silk-offcanvas--inner-transform;
+.silc-offcanvas__inner {
+	position: $silc-offcanvas--inner-position;
+	top: $silc-offcanvas--inner-top;
+	right: $silc-offcanvas--inner-right;
+	bottom: $silc-offcanvas--inner-bottom;
+	left: $silc-offcanvas--inner-left;
+	width: $silc-offcanvas--inner-width;
+	height: $silc-offcanvas--inner-height;
+	max-width: $silc-offcanvas--inner-max-width;
+	max-height: $silc-offcanvas--inner-max-height;
+	padding: $silc-offcanvas--inner-padding;
+	background: $silc-offcanvas--inner-background;
+	transform: $silc-offcanvas--inner-transform;
 	box-sizing: border-box;
 }
 
-.silk-offcanvas__trigger {
+.silc-offcanvas__trigger {
 	display: none;
 
 	.js & {
 		display: block;
 	}
 
-	@media (min-width:$silk-offcanvas__trigger--hidden) {
+	@media (min-width:$silc-offcanvas__trigger--hidden) {
 
 		.js & {
 			display: none;
@@ -75,32 +75,32 @@
 	}
 }
 
-.silk-offcanvas--modal {
+.silc-offcanvas--modal {
 
 	.js & {
-		position: $silk-offcanvas--modal-position;
-		padding: $silk-offcanvas--modal-padding;
-		opacity: $silk-offcanvas--modal-opacity;
-		transition: $silk-offcanvas--modal-transition;
-		background: $silk-offcanvas--modal-background;
+		position: $silc-offcanvas--modal-position;
+		padding: $silc-offcanvas--modal-padding;
+		opacity: $silc-offcanvas--modal-opacity;
+		transition: $silc-offcanvas--modal-transition;
+		background: $silc-offcanvas--modal-background;
 	}
 
-	&.silk-offcanvas--visible {
-		opacity: $silk-offcanvas--modal-visible-opacity;
+	&.silc-offcanvas--visible {
+		opacity: $silc-offcanvas--modal-visible-opacity;
 	}
 	
 }
 
-@media (min-width:$silk-offcanvas--visible) {
+@media (min-width:$silc-offcanvas--visible) {
 
-	.silk-offcanvas--modal {
+	.silc-offcanvas--modal {
 
 		.js & {
 			position: fixed;
-			transform: $silk-offcanvas--modal-transform;
+			transform: $silc-offcanvas--modal-transform;
 		}
 
-		&.silk-offcanvas--visible {
+		&.silc-offcanvas--visible {
 			transform: none;
 		}
 	}
