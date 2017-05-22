@@ -9,17 +9,33 @@ $silk-offcanvas-height: 100% !default;
 $silk-offcanvas-background: none !default;
 $silk-offcanvas-transition: transform .25s ease-in-out !default;
 $silk-offcanvas-transform: translate3d(100%, 0, 0) !default;
-$silk-offcanvas-opacity: 0 !default;
 
 $silk-offcanvas--left-transform: translate3d(-100%, 0, 0) !default;
 $silk-offcanvas--top-transform: translate3d(0, -100%, 0) !default;
 $silk-offcanvas--bottom-transform: translate3d(0, 100%, 0) !default;
-$silk-offcanvas--modal-transform: translate3d(100%, 0, 0) !default;
 
-$silk-offcanvas--visible-opacity: 1 !default;
 $silk-offcanvas--visible-transform: translate3d(0, 0, 0) !default;
-
 $silk-offcanvas--visible-position: static !default;
-$silk-offcanvas--visible-opacity: 1 !default;
 $silk-offcanvas--visible-transform: none !default;
 $silk-offcanvas--visible-width: 100% !default;
+
+$silk-offcanvas--inner-position: absolute !default;
+$silk-offcanvas--inner-padding: 1em !default;
+$silk-offcanvas--inner-width: 90% !default;
+$silk-offcanvas--inner-height: 90% !default;
+$silk-offcanvas--inner-background: #fff !default;
+$silk-offcanvas--inner-max-width: none !default;
+$silk-offcanvas--inner-max-height: none !default;
+$silk-offcanvas--inner-top: 50% !default;
+$silk-offcanvas--inner-right: auto !default;
+$silk-offcanvas--inner-bottom: auto !default;
+$silk-offcanvas--inner-left: 50% !default;
+$silk-offcanvas--inner-transform: translate(-50%,-50%) !default;
+
+$silk-offcanvas--modal-position: $silk-offcanvas-position !default;
+$silk-offcanvas--modal-transform: translate3d(100%, 0, 0) !default;
+$silk-offcanvas--modal-padding: 1em !default;
+$silk-offcanvas--modal-opacity: 0 !default;
+$silk-offcanvas--modal-transition: opacity .5s ease-out !default;
+$silk-offcanvas--modal-background: rgba(0,0,0,.5) !default;
+$silk-offcanvas--modal-visible-opacity: 1 !default;

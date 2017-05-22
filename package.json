@@ -1,7 +1,7 @@
 {
   "name": "silk-offcanvas",
-  "version": "0.2.0",
-  "description": "Off canvas component for the silk framework",
+  "version": "0.3.0",
+  "description": "Offcanvas component for the silk framework",
   "main": "./dist/index.js",
   "author": {
     "name": "Nick Rigby",
