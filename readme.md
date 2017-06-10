@@ -1,4 +1,4 @@
-# silc Offcanvas
+# silc offcanvas [![Build Status](https://travis-ci.org/nickrigby/silc-offcanvas.svg?branch=master)](https://travis-ci.org/nickrigby/silc-offcanvas) [![npm version](https://badge.fury.io/js/silc-offcanvas.svg)](https://badge.fury.io/js/silc-offcanvas)
 The offcanvas module is an ultra-lightweight web component for the [silc framework](https://github.com/nickrigby/silc). The offcanvas module allows you to place content outside of the viewport, with the ability to trigger its visibility.
 
 ## HTML
