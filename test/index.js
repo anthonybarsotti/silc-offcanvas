@@ -1,7 +1,7 @@
 const server = require('node-http-server');
 const Browser = require('zombie');
 
-describe('User visits offcanvas demo page', function () {
+describe('silc offcanvas module', function () {
 
     const browser = new Browser();
 
@@ -14,53 +14,53 @@ describe('User visits offcanvas demo page', function () {
         return browser.visit('http://localhost:9001/index.html');
     });
 
-    describe('offcanvas trigger open', function () {
+    describe('offcanvas trigger open click', function () {
 
         before(function() {
             return browser
                 .fire('#silc-offcanvas-0-open', 'click');
         });
 
-        it('should display offcanvas element when clicked', function () {
+        it('should show exactly one offcanvas element', function () {
             browser.assert.elements('#silc-offcanvas-0.silc-offcanvas--visible', { exactly: 1 });
         });
 
     });
 
-    describe('offcanvas trigger close', function () {
+    describe('offcanvas trigger close click', function () {
 
         before(function() {
             return browser
                 .fire('#silc-offcanvas-0 .silc-offcanvas__trigger--close', 'click');
         });
 
-        it('should hide offcanvas element when clicked', function () {
+        it('should hide offcanvas element', function () {
             browser.assert.elements('#silc-offcanvas-0.silc-offcanvas--visible', { exactly: 0 });
         });
 
     });
 
-    describe('modal trigger open', function () {
+    describe('modal trigger open click', function () {
 
         before(function() {
             return browser
                 .fire('#silc-offcanvas-1-open', 'click');
         });
 
-        it('should display modal element when clicked', function () {
+        it('should show exactly one modal element', function () {
             browser.assert.elements('#silc-offcanvas-1.silc-offcanvas--visible', { exactly: 1 });
         });
 
     });
 
-    describe('modal trigger close', function () {
+    describe('modal trigger close click', function () {
 
         before(function() {
             return browser
                 .fire('#silc-offcanvas-1 .silc-offcanvas__trigger--modal', 'click');
         });
 
-        it('should hide modal element when clicked', function () {
+        it('should hide modal element', function () {
             browser.assert.elements('#silc-offcanvas-1.silc-offcanvas--visible', { exactly: 0 });
         });
 
