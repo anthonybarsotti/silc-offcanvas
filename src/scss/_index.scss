@@ -1,3 +1,4 @@
+@import "../../node_modules/silc-core/src/scss/index";
 @import "variables";
 
 .silc-offcanvas {
@@ -12,6 +13,7 @@
 		background: $silc-offcanvas-background;
 		transition: $silc-offcanvas-transition;
 		box-sizing: border-box;
+		visibility: hidden;
 
 		&--left {
 			transform: $silc-offcanvas--left-transform;
@@ -27,30 +29,37 @@
 
 		&--visible {
 			transform: $silc-offcanvas--visible-transform;
+			visibility: visible;
 		}
 
-		@media (min-width:$silc-offcanvas--visible) {
-			position: $silc-offcanvas--visible-position;
-			transform: $silc-offcanvas--visible-transform;
-			width: $silc-offcanvas--visible-width;
+		@if strip-unit($silc-offcanvas--options--becomes-visible) > 0 {
+			@media (min-width:$silc-offcanvas--options--becomes-visible) {
+				position: $silc-offcanvas--visible-position;
+				transform: $silc-offcanvas--visible-transform;
+				width: $silc-offcanvas--visible-width;
+				visibility: visible;
+			}
 		}
 	}
 }
 
 .silc-offcanvas__inner {
-	position: $silc-offcanvas--inner-position;
-	top: $silc-offcanvas--inner-top;
-	right: $silc-offcanvas--inner-right;
-	bottom: $silc-offcanvas--inner-bottom;
-	left: $silc-offcanvas--inner-left;
-	width: $silc-offcanvas--inner-width;
-	height: $silc-offcanvas--inner-height;
-	max-width: $silc-offcanvas--inner-max-width;
-	max-height: $silc-offcanvas--inner-max-height;
-	padding: $silc-offcanvas--inner-padding;
-	background: $silc-offcanvas--inner-background;
-	transform: $silc-offcanvas--inner-transform;
-	box-sizing: border-box;
+
+	.js & {
+		position: $silc-offcanvas__inner-position;
+		top: $silc-offcanvas__inner-top;
+		right: $silc-offcanvas__inner-right;
+		bottom: $silc-offcanvas__inner-bottom;
+		left: $silc-offcanvas__inner-left;
+		width: $silc-offcanvas__inner-width;
+		height: $silc-offcanvas__inner-height;
+		max-width: $silc-offcanvas__inner-max-width;
+		max-height: $silc-offcanvas__inner-max-height;
+		padding: $silc-offcanvas__inner-padding;
+		background: $silc-offcanvas__inner-background;
+		transform: $silc-offcanvas__inner-transform;
+		box-sizing: border-box;
+	}
 }
 
 .silc-offcanvas__trigger {
@@ -60,16 +69,11 @@
 		display: block;
 	}
 
-	@media (min-width:$silc-offcanvas__trigger--hidden) {
-
-		.js & {
-			display: none;
-		}
-
-		&--modal {
+	@if strip-unit($silc-offcanvas--options--becomes-visible) > 0 {
+		@media (min-width:$silc-offcanvas--options--becomes-visible) {
 
 			.js & {
-				display: block;
+				display: none;
 			}
 		}
 	}
@@ -88,20 +92,28 @@
 	&.silc-offcanvas--visible {
 		opacity: $silc-offcanvas--modal-visible-opacity;
 	}
-	
+
+	@if strip-unit($silc-offcanvas--options--becomes-visible) > 0 {
+		@media (min-width:$silc-offcanvas--options--becomes-visible) {
+			.js & {
+				position: fixed;
+				transform: $silc-offcanvas--modal-transform;
+			}
+
+			&.silc-offcanvas--visible {
+				transform: none;
+			}
+		}
+	}
 }
 
-@media (min-width:$silc-offcanvas--visible) {
+.silc-offcanvas__trigger--modal {
 
-	.silc-offcanvas--modal {
-
-		.js & {
-			position: fixed;
-			transform: $silc-offcanvas--modal-transform;
-		}
-
-		&.silc-offcanvas--visible {
-			transform: none;
+	@if strip-unit($silc-offcanvas--options--becomes-visible) > 0 {
+		@media (min-width:$silc-offcanvas--options--becomes-visible) {
+			.js & {
+				display: block;
+			}
 		}
 	}
 }

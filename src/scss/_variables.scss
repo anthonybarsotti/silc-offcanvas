@@ -1,5 +1,4 @@
-$silc-offcanvas--visible: 800px !default;
-$silc-offcanvas__trigger--hidden: 800px !default; 
+$silc-offcanvas--options--becomes-visible: 800px !default;
 
 $silc-offcanvas-position: fixed !default;
 $silc-offcanvas-top: 0 !default;
@@ -19,18 +18,18 @@ $silc-offcanvas--visible-position: static !default;
 $silc-offcanvas--visible-transform: none !default;
 $silc-offcanvas--visible-width: 100% !default;
 
-$silc-offcanvas--inner-position: absolute !default;
-$silc-offcanvas--inner-padding: 1em !default;
-$silc-offcanvas--inner-width: 90% !default;
-$silc-offcanvas--inner-height: 90% !default;
-$silc-offcanvas--inner-background: #fff !default;
-$silc-offcanvas--inner-max-width: none !default;
-$silc-offcanvas--inner-max-height: none !default;
-$silc-offcanvas--inner-top: 50% !default;
-$silc-offcanvas--inner-right: auto !default;
-$silc-offcanvas--inner-bottom: auto !default;
-$silc-offcanvas--inner-left: 50% !default;
-$silc-offcanvas--inner-transform: translate(-50%,-50%) !default;
+$silc-offcanvas__inner-position: absolute !default;
+$silc-offcanvas__inner-padding: 1em !default;
+$silc-offcanvas__inner-width: 90% !default;
+$silc-offcanvas__inner-height: 90% !default;
+$silc-offcanvas__inner-background: #fff !default;
+$silc-offcanvas__inner-max-width: none !default;
+$silc-offcanvas__inner-max-height: none !default;
+$silc-offcanvas__inner-top: 50% !default;
+$silc-offcanvas__inner-right: auto !default;
+$silc-offcanvas__inner-bottom: auto !default;
+$silc-offcanvas__inner-left: 50% !default;
+$silc-offcanvas__inner-transform: translate(-50%,-50%) !default;
 
 $silc-offcanvas--modal-position: $silc-offcanvas-position !default;
 $silc-offcanvas--modal-transform: translate3d(100%, 0, 0) !default;
