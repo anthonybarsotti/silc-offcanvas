@@ -19,17 +19,19 @@ The content element should contain an anchor link that is self-referencing throu
 </div>
 ```
 
-## Options
+## Class modifiers
 
 ### Direction
 An offcanvas element appears from the right by default, but can be modified using one of the following classes:
 
-Left: `silc-offcanvas--left`
-Top: `silc-offcanvas--top`
-Bottom: `silc-offcanvas--bottom`
+```html
+<div class="silc-offcanvas silc-offcanvas--left">...</div>
+<div class="silc-offcanvas silc-offcanvas--top">...</div>
+<div class="silc-offcanvas silc-offcanvas--bottom">...</div>
+```
 
-### Responsive
-You can control when an element becomes offcanvas using the `$silc-offcanvas--visible` and `$silc-offcanvas__trigger--hidden` variables by overriding them. The default value is `800px`.
+## Options
+You can control when an element becomes offcanvas by overriding the `$silc-offcanvas--options--becomes-visible` variable. The default value is `800px`.
 
 ## Styling
 As with all silc components, no deliberate style has been added. However, through a SASS fallback system, a number of [SASS variables](src/scss/_variables.scss) are available to easily apply design without having to write your own selectors.
