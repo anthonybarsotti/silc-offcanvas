@@ -1,6 +1,6 @@
 {
   "name": "silc-offcanvas",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Offcanvas component for the silc framework",
   "main": "./dist/index.js",
   "author": {
