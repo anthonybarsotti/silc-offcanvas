@@ -40,30 +40,4 @@ describe('silc offcanvas module', function () {
 
     });
 
-    describe('modal trigger open click', function () {
-
-        before(function() {
-            return browser
-                .fire('#silc-offcanvas-1-open', 'click');
-        });
-
-        it('should show exactly one modal element', function () {
-            browser.assert.elements('#silc-offcanvas-1.silc-offcanvas--visible', { exactly: 1 });
-        });
-
-    });
-
-    describe('modal trigger close click', function () {
-
-        before(function() {
-            return browser
-                .fire('#silc-offcanvas-1 .silc-offcanvas__trigger--modal', 'click');
-        });
-
-        it('should hide modal element', function () {
-            browser.assert.elements('#silc-offcanvas-1.silc-offcanvas--visible', { exactly: 0 });
-        });
-
-    });
-
 });

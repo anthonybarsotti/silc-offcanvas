@@ -50,24 +50,3 @@ html {
   @media (min-width: 800px) {
     .js .silc-offcanvas__trigger {
       display: none; } }
-
-.js .silc-offcanvas--modal {
-  position: fixed;
-  padding: 1em;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background: rgba(0, 0, 0, 0.5); }
-
-.silc-offcanvas--modal.silc-offcanvas--visible {
-  opacity: 1; }
-
-@media (min-width: 800px) {
-  .js .silc-offcanvas--modal {
-    position: fixed;
-    transform: translate3d(100%, 0, 0); }
-  .silc-offcanvas--modal.silc-offcanvas--visible {
-    transform: none; } }
-
-@media (min-width: 800px) {
-  .js .silc-offcanvas__trigger--modal {
-    display: block; } }
